@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./pics/ox-2 (1).svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Aupre</title>
+</head>
+<body style="background: linear-gradient(to right, #979696, #911c1c)">
+    <div class="container">
+
+        <!--Navbar-->
+
+      <div class="navbar">
+          <img src="./pics/ox-2 (1).svg" alt=""  class="logo"><h2 style="padding-left: 1%;">aupre</h2>
+          <nav>
+              <ul id="menuList">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">All products</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+              </ul>
+          </nav>
+          <img src="./pics/menu.png" alt="" class="menu-icon" onclick="togglemenu()">
+      </div>
+
+      <!--Row-->
+
+      <div class="row">
+
+          <!--Column 1-->
+
+          <div class="col-1">
+              <h2>aupre.</h2>
+              <h3>Cold Pressed Juice</h3>
+              <p>Made from specially hand-picked fruits with no added sugars and preservatives.</p>
+              <h4>$14.99</h4>
+              <button type="button">Order Now <img src="./pics/arrow.png" alt=""> </button>
+          </div>
+
+          <!--Column 2-->
+
+          <div class="col-2">
+              <img src="./pics/aupre.png" class="drink" alt="">
+              <div class="color-box"></div>
+              <div class="add-btn">
+                  <img src="./pics/add.png" alt="">
+                  <p><small>Add to Cart</small></p>
+              </div>
+          </div>
+      </div>
+
+    </div>
+
+    <!--Tooglemenu-->
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight  = "0px";
+
+        function togglemenu()
+        {
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "170px";
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
